@@ -1,0 +1,19 @@
+@use '../base/var' as *;
+.footer{
+    padding: 60px 0 20px 0;
+    @include desktop {
+        padding: 80px 0 20px 0;
+    }
+    &__text{
+        color:  map-get($colors, "gray");
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+line-height: normal;
+
+@include tablet {
+font-size: 16px;
+}
+
+    }
+}

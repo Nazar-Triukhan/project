@@ -1,0 +1,19 @@
+@use './var' as *;
+body{
+  background-color:  map-get($colors, "primary");
+
+}
+
+h1, h2, h3, p, span , a , button {
+    font-family: Montserrat;
+    font-weight: 400;
+
+}
+
+h1, h2 , h3{
+    color: map-get($colors, "accent");
+}
+
+p{
+    color: map-get($colors, "white");
+}

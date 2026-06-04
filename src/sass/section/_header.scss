@@ -1,0 +1,68 @@
+@use "../base/var" as *;
+.header {
+  padding: 78px 0 52px 0;
+  background-image: url(/src/img/pic.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include tablet{
+    padding: 40px 0 123px 0 ;
+  }
+  @include desktop{
+    padding: 40px 0 133px 0 ;
+  }
+
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: clamp(1.125rem, 0.356rem + 4.1vw, 3.125rem);
+    font-weight: 900;
+    line-height: normal;
+    width:clamp(13.25rem, 4.188rem + 48.33vw, 36.813rem);
+    margin-bottom: 25px;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+
+    @include tablet{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+  }
+
+  &__input{
+    border-radius: 20px;
+background: rgba(255, 255, 255, 0.158);
+backdrop-filter: blur(10px);
+border: none;
+padding: 10px 0 10px 30px;
+box-sizing: border-box;
+width: 100%;
+color: map-get($colors, "white");
+font-family: Montserrat;
+transition: 400ms outline;
+
+&::placeholder{
+    color: map-get($colors, "white");
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
+}
+
+&:focus{
+    outline:3px solid map-get($colors, "accent");
+    border: none;
+    //   box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.15);
+}
+@include tablet{
+    width: 270px;
+}
+  }
+}

@@ -1,0 +1,46 @@
+// ─── COLORS ───────────────────────────────────
+$colors: (
+  "primary": #0E0E0E, // map-get($colors, "primary")
+  "accent": #DC56C5, // map-get($colors, "accent")
+  "gray": #939393,  // map-get($colors, "gray")
+  "accent-light": #4C00FE,  // map-get($colors, "accent-light")
+  "white": #fff,  // map-get($colors, "white")
+);
+
+// // ─── FONT SIZES ───────────────────────────────
+// $font-sizes: (
+//   "xs": 12px,  // 14px  map-get($font-sizes, "xs")
+//   "sm": 14px,      // 16px  map-get($font-sizes, "sm")
+//   "md": 16px,   // 20px  map-get($font-sizes, "md")
+//   "lg": 18px,   // 36px  map-get($font-sizes, "lg")
+//   "xl": 20px,      // 64px. map-get($font-sizes, "xl")
+// );
+
+// ─── FONT WEIGHTS ─────────────────────────────
+// $fw-regular: 400;
+// $fw-normal: 500;
+// $fw-rarely: 600;
+// $fw-bold: 700;
+// $fw-big: 900;
+
+// ─── BREAKPOINTS ──────────────────────────────
+$tablet-min: 984px; 
+$desktop-min: 1080px; 
+
+
+// ─── MIXINS ───────────────────────────────────
+@mixin tablet {
+  @media screen and (min-width: $tablet-min) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-min) {
+    @content;
+  }
+}
+
+
+
+
