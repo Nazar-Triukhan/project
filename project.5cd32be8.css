@@ -1,0 +1,265 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  display: block;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+h1, h2, h3, p, span, a, button {
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  color: #dc56c5;
+}
+
+p {
+  color: #fff;
+}
+
+.header {
+  background-image: url("pic.5768bcb3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 78px 0 52px;
+}
+
+@media screen and (width >= 984px) {
+  .header {
+    padding: 40px 0 123px;
+  }
+}
+
+@media screen and (width >= 1080px) {
+  .header {
+    padding: 40px 0 133px;
+  }
+}
+
+.header__title {
+  text-align: center;
+  width: clamp(13.25rem, 4.188rem + 48.33vw, 36.813rem);
+  margin: 0 auto 25px;
+  font-size: clamp(1.125rem, .356rem + 4.1vw, 3.125rem);
+  font-weight: 900;
+  line-height: normal;
+}
+
+.header__list {
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  display: flex;
+}
+
+@media screen and (width >= 984px) {
+  .header__list {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.header__input {
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  color: #fff;
+  background: #ffffff28;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px 0 10px 30px;
+  font-family: Montserrat;
+  transition: outline .4s;
+}
+
+.header__input::placeholder {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__input:focus {
+  border: none;
+  outline: 3px solid #dc56c5;
+}
+
+@media screen and (width >= 984px) {
+  .header__input {
+    width: 270px;
+  }
+}
+
+.cards {
+  padding-top: 30px;
+}
+
+.cards__list {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 100%;
+  display: grid;
+}
+
+@media screen and (width >= 984px) {
+  .cards__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 27px;
+  }
+}
+
+@media screen and (width >= 1080px) {
+  .cards__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+  }
+}
+
+.cards__item {
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.cards__item:before {
+  content: "";
+  border: 1px solid #dc56c54d;
+  border-radius: 50px 0;
+  width: clamp(6.813rem, 5.755rem + 5.64vw, 9.563rem);
+  height: clamp(8.938rem, 9.947rem - 5.38vw, 6.313rem);
+  position: absolute;
+  top: -13px;
+  right: -13px;
+}
+
+.cards__img {
+  aspect-ratio: 122 / 161;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50px 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (width >= 984px) {
+  .cards__img {
+    aspect-ratio: 180 / 227;
+  }
+}
+
+.cards__title {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cards__data {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.cards__counrty {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.cards__items {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.cards__number {
+  color: #fff;
+  background-color: #0000;
+  border: none;
+}
+
+.cards__dots {
+  color: #fff;
+}
+
+.cards__error {
+  text-align: center;
+  color: red;
+  margin-right: 40px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.active {
+  border: 1px solid #dc56c5;
+  border-radius: 10px 0;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+.footer {
+  padding: 60px 0 20px;
+}
+
+@media screen and (width >= 1080px) {
+  .footer {
+    padding: 80px 0 20px;
+  }
+}
+
+.footer__text {
+  color: #939393;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (width >= 984px) {
+  .footer__text {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=project.5cd32be8.css.map */
