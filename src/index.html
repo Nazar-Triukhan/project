@@ -17,11 +17,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../src/sass/main.css" />
+<link rel="stylesheet" href="./sass/main.scss" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+              <div class="header__decoration"></div>
+      <div class="container header__box">
+        <!-- <div class="header__elips"></div> -->
+                  <svg class="header__icon">
+            <use href="./img/symbol-defs.svg#icon-logo"></use>
+            </svg>
         <h1 class="header__title">FIND BEST EVENTS AROUND THE WORLD</h1>
         <ul class="header__list">
           <li class="header__item">
@@ -29,6 +34,9 @@
           </li>
           <li class="header__item">
             <input class="header__input" type="text" name="country" id="country" placeholder="Choose country"/>
+            <ul class="header__items hiden" name="list">
+
+            </ul>
           </li>
         </ul>
       </div>
@@ -56,3 +64,6 @@
     <script type="module" src="./app.js"></script>
   </body>
 </html>
+
+
+

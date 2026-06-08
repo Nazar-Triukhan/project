@@ -1,0 +1,134 @@
+  @use '../base/var' as *;
+  .modal {
+  padding: 20px 15px 60px 15px;
+  box-sizing: border-box;
+border-radius: 150px 0;
+  background: #FFF2FD;
+  width: clamp(17rem, 0.894rem + 85.9vw, 58.875rem);
+  max-height: 95vh;
+  overflow-y: auto;
+  margin: 0 auto;
+
+  p, span{
+    color: map-get($colors, "primary");
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    @include tablet{
+        text-align: start;
+        justify-content: start;
+    }
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  a{
+    width: 145px;
+    display: block;
+    margin: 0 auto;
+
+    color: #FFF;
+font-size: 16px;
+font-weight: 500;
+line-height: normal;
+
+padding: 10px 19px;
+
+@include tablet{
+margin: 0;
+}
+
+  }
+
+
+
+  h2{
+    color: map-get($colors, "accent");
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    @include tablet{
+        justify-content: start;
+    }
+  }
+
+  a{
+    background-color: map-get($colors, "accent-light");
+    color: map-get($colors, "white");
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  &__ticet{
+    margin-bottom: 20px !important;
+  }
+
+
+
+    &__link{
+    margin-top: 30px !important;
+    background-color: transparent !important;
+    border:1px solid map-get($colors, "accent-light") !important;
+    color: map-get($colors, "accent-light") !important;
+  }
+
+  &__wrap{
+@include tablet{
+        display: flex;
+        justify-content: center;
+    gap: 60px;
+}
+    @include desktop {
+        gap: 60px;
+    }
+  }
+
+  &__avatar{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &__full{
+width: 233.0px;
+height: 416.0px;
+
+    margin-top: 30px;
+    display: none;
+    @include tablet{
+        display: block;
+        margin-top: 0;
+    }
+
+    @include desktop{
+        width: 360.0px;
+height: 641.0px;
+
+    }
+  }
+// &__icon{
+//     width: 30px;
+//     height: 30px;
+//     color: aqua;
+//     fill: red;
+//       cursor: pointer;
+// }
+
+
+&__close{
+    width: 35px;
+    
+    height: 25px;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+          cursor: pointer;
+}
+}
